@@ -1,6 +1,8 @@
 # gulp-factory-mongo
 >A factory-girl oriented gulp task for seeding MongoDB collections
 
+[![Build Status](https://travis-ci.org/TheMagoo73/gulp-factory-mongo.svg?branch=master)](https://travis-ci.org/TheMagoo73/gulp-factory-mongo) [![Coverage Status](https://coveralls.io/repos/github/TheMagoo73/gulp-factory-mongo/badge.svg?branch=master)](https://coveralls.io/github/TheMagoo73/gulp-factory-mongo?branch=master)
+
 ## Installation
 
 Install the package with NPM and add it to your dev dependancies:
