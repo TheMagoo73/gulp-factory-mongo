@@ -32,7 +32,7 @@ gulp.task('seed', (cb) => {
     })
 });
 ```
-### Options
+### Options 
 
 #### connectionString
 **Mandatory**
