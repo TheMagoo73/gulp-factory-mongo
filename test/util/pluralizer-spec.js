@@ -1,5 +1,3 @@
-'use strict';
-
 const mocha = require('mocha');
 const describe = mocha.describe;
 const it = mocha.it;

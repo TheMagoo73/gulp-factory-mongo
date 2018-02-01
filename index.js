@@ -1,5 +1,3 @@
-'use strict';
-
 var gulpFactoryMongoError = require('./lib/gulp-factory-mongo-error');
 
 module.exports = function(opts) {

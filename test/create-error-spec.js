@@ -1,5 +1,3 @@
-'use strict';
-
 var mocha = require('mocha');
 var createError = require('../lib/create-error');
 var GulpFactoryMongoError = require('../lib/gulp-factory-mongo-error');
