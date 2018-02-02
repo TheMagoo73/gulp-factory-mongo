@@ -21,6 +21,34 @@ describe('configuration', ()=>{
             (()=>new Configuration({connectionString: 'mongo:', database: 'testdb', entity: 'user'})).should.throw();            
         })
 
+        it('handles default values', () => {
+            config = new Configuration({connectionString: 'mongo:', database: 'testdb', entity: 'user', factoryDefinition: {email:'name@domain.com', paswword:'what'}});
+            config._config.createDatabase.should.be.false;
+            config._config.collection.should.equal('users');
+            config._config.createCollection.should.be.true;
+            config._config.appendCollection.should.be.true;
+            config._config.count.should.equal(1);
+        })
+
+        it('', () => {
+            config = new Configuration({connectionString: 'mongo:', 
+                                        database: 'testdb',
+                                        entity: 'user',
+                                        createDatabase: true,
+                                        collection: 'people',
+                                        createCollection: false,
+                                        appendCollection: false,
+                                        count: 10,
+                                        factoryDefinition: {email:'name@domain.com', paswword:'what'}
+                                        });
+
+            config._config.createDatabase.should.be.true;
+            config._config.collection.should.equal('people');
+            config._config.createCollection.should.be.false;
+            config._config.appendCollection.should.be.false;
+            config._config.count.should.equal(10);            
+        })
+
     })
 
     describe('accessors', ()=> {
