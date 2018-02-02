@@ -1,7 +1,7 @@
 # gulp-factory-mongo
 >A factory-girl oriented gulp task for seeding MongoDB collections
 
-[![Build Status](https://travis-ci.org/TheMagoo73/gulp-factory-mongo.svg?branch=master)](https://travis-ci.org/TheMagoo73/gulp-factory-mongo) [![Coverage Status](https://coveralls.io/repos/github/TheMagoo73/gulp-factory-mongo/badge.svg?branch=master)](https://coveralls.io/github/TheMagoo73/gulp-factory-mongo?branch=master)
+[![Build Status](https://travis-ci.org/TheMagoo73/gulp-factory-mongo.svg?branch=master)](https://travis-ci.org/TheMagoo73/gulp-factory-mongo) [![Coverage Status](https://coveralls.io/repos/github/TheMagoo73/gulp-factory-mongo/badge.svg?branch=master)](https://coveralls.io/github/TheMagoo73/gulp-factory-mongo?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/3c1260463cf0411334f8/maintainability)](https://codeclimate.com/github/TheMagoo73/gulp-factory-mongo/maintainability)
 
 ## Installation
 
