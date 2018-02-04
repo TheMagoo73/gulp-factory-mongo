@@ -30,8 +30,8 @@ describe('configuration', ()=>{
             config._config.count.should.equal(1);
         })
 
-        it('', () => {
-            config = new Configuration({connectionString: 'mongo:', 
+        it('Can over-ride defaults', () => {
+            (()=>config = new Configuration({connectionString: 'mongo:', 
                                         database: 'testdb',
                                         entity: 'user',
                                         createDatabase: true,
@@ -40,7 +40,7 @@ describe('configuration', ()=>{
                                         appendCollection: false,
                                         count: 10,
                                         factoryDefinition: {email:'name@domain.com', paswword:'what'}
-                                        });
+                                        })).should.not.throw();
 
             config._config.createDatabase.should.be.true;
             config._config.collection.should.equal('people');
